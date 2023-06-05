@@ -1,0 +1,236 @@
+*{
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif!important;
+
+}
+
+body {
+  background-image: url('../images/Background.jpg');
+  background-size:cover;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 30px;
+  background-attachment: fixed;
+  opacity: 0.9;
+}
+
+
+body::-webkit-scrollbar{
+  display:none;
+}
+.search-section{
+  background: transparent;
+  margin-top: -10px;
+}
+
+.about-sec {
+  color:whitesmoke; 
+}
+
+#navbar-brand{
+  left: 0px;
+  right: 0px;
+  display: flex;
+  padding: 11px 30px;
+  height: 1px;
+  border-radius: 40%;
+}
+
+#logo {
+  position: absolute;
+  left: 4px;
+  top: 10px;
+  color: whitesmoke;
+  border-radius: 50%;
+  margin-left: 20px;
+  animation: animate 5s linear infinite;
+  
+}
+
+  #navbar-brand h1{
+    color      : whitesmoke;
+    font-size  : 30px;
+    font-weight: normal;
+    font-family: monospace!important;
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    animation: animate 5s linear infinite;
+ } 
+ .nav-item{
+  margin: 0px 20px;
+  position: relative;
+  left: 1100px;
+  top: 8px;
+  font-weight:lighter;
+  font-size:25px;
+  color: whitesmoke !important;
+}  
+ a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+a{
+  color: black !important;
+  text-decoration: none !important;
+  box-shadow : 3px 5px 10px rgb(59, 53, 55);
+  border-radius: 5px;
+  background-color:azure;
+  opacity: 0.8;
+}
+.nav-item a:hover,
+a:active {
+    color: white;
+    box-shadow: 0 1rem 2rem rgba(black, .4);
+    transform: rotate(5deg) scale(1.2);
+    padding: 5px;
+    list-style: none;
+}
+.search-input{
+  width: 750px !important; 
+  border-radius:50px !important;
+  position: relative;
+  top:30px;
+  height: 30px !important;
+  font-family:monospace;
+  font-size:20px;
+  text-align: center;
+  
+}
+::placeholder{
+  font-size:20px;
+  color:darkgrey;
+  position: relative;
+  left:8px;
+} 
+.search-btn{
+  position: relative;
+  left: 700px;
+  bottom: 30px;
+  height:45px;
+  border-radius: 10px;
+} 
+
+.search-container {
+  width: 700px !important;
+  padding: 65px;
+ 
+}
+#search-form{
+  top:200px;
+}
+
+.result-section {
+  background-color: transparent;
+  font-family:monospace;
+}
+.result-section h2 {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color:rgb(6, 6, 6);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+  font-family: monospace;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/*  Mobile Responsive  */
+@media only screen and (max-width: 768px) {
+  .search-container {
+    width: 100% !important;
+    padding: 50px;
+  }
+
+  div#superhero {
+    width: 100%;
+  }
+}
+
+#img-cont img{
+  position:relative;
+  height:300px;
+  width: 300px;
+  border-radius:5px;
+  border-style: groove;
+
+}
+
+  #title h1{
+    background-color: black;
+    color:whitesmoke;
+    font-size  : 25px;
+    font-weight: normal;
+    font-family:monospace !important;
+    position: absolute;
+    left: 500px;
+    width:500px;
+    top:40px;
+  }
+
+  #info{
+    font-family:monospace;
+    font-weight: bold;
+    overflow-x: scroll auto !important;
+  }
+  #details{
+    position: relative;
+    bottom: 280px;
+    left: 320px;
+    font-size: 20px;
+    font-family:monospace;
+  }
+  .backbtn{
+    position:relative;
+    bottom: 320px;
+    height: 0px !important;
+    left: 1150px;
+    }
+    
+    a{
+      color:#fff;
+      font-size  : 30px;
+      font-weight:lighter;
+      font-family: monospace;
+      padding: 6px;
+    
+    }
+    #fav,#learn-more{
+      font-family: monospace;
+      background-color: black;
+      color: whitesmoke;
+      border-color: black;
+
+    }
+    #fav:hover{
+      background-color: whitesmoke;
+      color: black;
+    }
+
+    #learn-more:hover{
+      background-color: whitesmoke;
+      color: black;
+    }
+
+    #querySection{
+      color:dimgray;
+      font-size: 20px;
+      font-family: monospace;
+    }
+   
